@@ -1,10 +1,12 @@
 package sample;
 
 public class Ingrediens {
+    //TODO Variabler
     private String navn;
     private int kalorier;
     public int kalorieriAlt;
 
+    //TODO Getter og setters
     public String getNavn() {
         return navn;
     }
@@ -20,7 +22,7 @@ public class Ingrediens {
     public void setKalorier(int kalorier) {
         this.kalorier = kalorier;
     }
-
+    //TODO Ingrediens og rigPaaKalorier metoder
     public Ingrediens(String navn, int kalorier) {
         this.navn = navn;
         this.kalorier = kalorier;
@@ -38,12 +40,13 @@ public class Ingrediens {
             System.out.println(navn + " er ikke rig på kalorier");
         return false;
     }
+    //TODO Kalorieberegner
     Kalorierberegner kalorierberegner = new Kalorierberegner() {
         @Override
         public int kalorieriAlt() {
             return kalorieriAlt;
         }
     };
-
+    //TODO enum Diet diet.
     public Diet diet;
 }

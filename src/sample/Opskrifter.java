@@ -5,12 +5,14 @@ import java.util.ArrayList;
 import static sample.SimpelTest.blankLine;
 
 public class Opskrifter {
+    //TODO Varialber
     private String navn;
     private String fremgangsmaade;
     private int antalPortioner;
     private double tilberedningstid;
     private String ingredienser;
 
+    // TODO Getter og Setters
     public String getNavn() {
         return navn;
     }
@@ -50,7 +52,7 @@ public class Opskrifter {
     public void setIngredienser(String ingredienser) {
         this.ingredienser = ingredienser;
     }
-
+// TODO Opskrift metoder
     public Opskrifter(String navn, String fremgangsmaade, int antalPortioner, double tilberedningstid, String ingredienser) {
         this.navn = navn;
         this.fremgangsmaade = fremgangsmaade;
@@ -80,7 +82,7 @@ public class Opskrifter {
        }
    }
 */
-    //Vidste ikke hvordan jeg kunne adskille de to fremgangsmåder i én metode.
+    //TODO Fremgangsmaade og visOpskrift metoder: Vidste ikke hvordan jeg kunne adskille de to fremgangsmåder i én metode.
     public void visFremgangsmaadeGlasur(){
         System.out.println("Opskriften for " + navn + ":");
         System.out.println("- Du blander flormelis og sukker, og smører det på kagen.");
@@ -113,11 +115,16 @@ public class Opskrifter {
         blankLine();
         visFremgangsmaadeTe();
     }
-
+    //TODO Kalorieberegner:
+/*Ikke sikker på hvordan man beregner kalorier sammen
     Kalorierberegner kalorierberegner = new Kalorierberegner() {
         @Override
         public int kalorieriAlt() {
-            return 0;
+            for (int i = 0; i < ; i++) {
+
+            }
+            return kalorieriAlt();
         }
     };
+ */
 }

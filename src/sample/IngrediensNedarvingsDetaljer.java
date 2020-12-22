@@ -1,10 +1,12 @@
 package sample;
 
 public class IngrediensNedarvingsDetaljer extends Ingrediens{
+    //TODO Variabler
     int cVitamin;
     int magnesium;
     int kalk;
 
+    //TODO Getter og setters
     public int getcVitamin() {
         return cVitamin;
     }
@@ -29,6 +31,7 @@ public class IngrediensNedarvingsDetaljer extends Ingrediens{
         this.kalk = kalk;
     }
 
+    //TODO IngrediensNedarvingsdetaljer metoder
     public IngrediensNedarvingsDetaljer(String navn, int kalorier, int cVitamin, int magnesium, int kalk) {
         super(navn, kalorier);
         this.cVitamin = cVitamin;
@@ -45,6 +48,7 @@ public class IngrediensNedarvingsDetaljer extends Ingrediens{
         this.kalk = kalk;
 
     }
+    //TODO godModforkoelse metode
     public boolean godModForkoelse() {
         if (getcVitamin() > 5)
             System.out.println(getNavn() + " er god mod forkølelse.");
