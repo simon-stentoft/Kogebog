@@ -30,4 +30,11 @@ public class Ingrediens {
         this.navn = navn;
         System.out.println("Ingrediens er oprettet: " + navn);
     }
+    public boolean rigPaaKalorier() {
+        if (getKalorier() >= 100)
+            System.out.println(navn + " er rig på kalorier");
+        else
+            System.out.println(navn + " er ikke rig på kalorier");
+        return false;
+    }
 }

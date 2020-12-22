@@ -14,7 +14,8 @@ public class SimpelTest {
         Opskrifter teOpskrift = new Opskrifter("Te");
         Ingrediens teBrev = new Ingrediens("Tebrev");
         Ingrediens vand = new Ingrediens("Vand");
-        Ingrediens citron = new Ingrediens("Citron");
+        Ingrediens citron = new Ingrediens("Citron",28);
+        Ingrediens sukker = new Ingrediens("Sukker",200);
 
         blankLine();
 
@@ -47,6 +48,9 @@ public class SimpelTest {
         blankLine();
         teOpskrift.visOpskriftTe();
 
+        blankLine();
+        citron.rigPaaKalorier();
+        sukker.rigPaaKalorier();
     }
     public static void blankLine() {
         System.out.println("");
