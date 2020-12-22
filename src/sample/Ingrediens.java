@@ -44,4 +44,6 @@ public class Ingrediens {
             return kalorieriAlt;
         }
     };
+
+    public Diet diet;
 }
