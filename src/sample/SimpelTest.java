@@ -29,7 +29,6 @@ public class SimpelTest {
         ingredienserTeOpskrift.add("Sukker");
 
         System.out.println("Du skal til glasur bruge:");
-
         for (int i = 0; i < ingredienserGlasurOpskrift.size(); i++) {
             System.out.println(" - " + ingredienserGlasurOpskrift.get(i));
         }
@@ -42,6 +41,11 @@ public class SimpelTest {
         glasurOpskrift.visFremgangsmaadeGlasur();
         blankLine();
         teOpskrift.visFremgangsmaadeTe();
+
+        blankLine();
+        glasurOpskrift.visOpskriftGlasur();
+        blankLine();
+        teOpskrift.visOpskriftTe();
 
     }
     public static void blankLine() {

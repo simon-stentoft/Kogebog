@@ -1,5 +1,9 @@
 package sample;
 
+import java.util.ArrayList;
+
+import static sample.SimpelTest.blankLine;
+
 public class Opskrifter {
     private String navn;
     private String fremgangsmaade;
@@ -68,13 +72,14 @@ public class Opskrifter {
    public void addIngrediens(String navn, int kalorier) {
 
    }
-
-/*   public void visIngredienser() {
-       for (String ingrediens : ) {
-           System.out.println("Du skal til ");
+/* Ikke sikker:
+   public void visIngredienser() {
+       System.out.println("Du skal til " + navn + " bruge:");
+       for (int i = 0; i < ingredienserTeOpskrift.size(); i++) {
+           System.out.println(" - " + ingredienserTeOpskrift.get(i));
        }
-   }*/
-
+   }
+*/
     //Vidste ikke hvordan jeg kunne adskille de to fremgangsmåder i én metode.
     public void visFremgangsmaadeGlasur(){
         System.out.println("Opskriften for " + navn + ":");
@@ -83,5 +88,29 @@ public class Opskrifter {
     public void visFremgangsmaadeTe() {
         System.out.println("Opskriften for " + navn + ":");
         System.out.println("- Put teen i kogende vand, vent 2 minutter og server.");
+    }
+    public void visOpskriftGlasur(){
+        ArrayList<String> ingredienserGlasurOpskrift = new ArrayList<>();
+        ingredienserGlasurOpskrift.add("Flormelis");
+        ingredienserGlasurOpskrift.add("Vand");
+        System.out.println("Du skal til " + navn +" bruge:");
+        for (int i = 0; i < ingredienserGlasurOpskrift.size(); i++) {
+            System.out.println(" - " + ingredienserGlasurOpskrift.get(i));
+        }
+        blankLine();
+        visFremgangsmaadeGlasur();
+    }
+    public void visOpskriftTe(){
+        ArrayList<String> ingredienserTeOpskrift = new ArrayList<>();
+        ingredienserTeOpskrift.add("Vand");
+        ingredienserTeOpskrift.add("Tebrev");
+        ingredienserTeOpskrift.add("Citron");
+        ingredienserTeOpskrift.add("Sukker");
+        System.out.println("Du skal til " + navn + " bruge:");
+        for (int i = 0; i < ingredienserTeOpskrift.size(); i++) {
+            System.out.println(" - " + ingredienserTeOpskrift.get(i));
+        }
+        blankLine();
+        visFremgangsmaadeTe();
     }
 }
