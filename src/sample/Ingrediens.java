@@ -3,6 +3,7 @@ package sample;
 public class Ingrediens {
     private String navn;
     private int kalorier;
+    public int kalorieriAlt;
 
     public String getNavn() {
         return navn;
@@ -37,4 +38,10 @@ public class Ingrediens {
             System.out.println(navn + " er ikke rig på kalorier");
         return false;
     }
+    Kalorierberegner kalorierberegner = new Kalorierberegner() {
+        @Override
+        public int kalorieriAlt() {
+            return kalorieriAlt;
+        }
+    };
 }

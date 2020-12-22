@@ -8,14 +8,14 @@ public class SimpelTest {
         System.out.println("Velkommen til min opskrift-applikations-dummy");
         blankLine();
         Opskrifter glasurOpskrift = new Opskrifter("Glasur");
-        Ingrediens flormelis = new Ingrediens("Flormelis");
-        Ingrediens Vand = new Ingrediens("Vand");
+        Ingrediens flormelis = new Ingrediens("Flormelis",390);
+        Ingrediens Vand = new Ingrediens("Vand",0);
         blankLine();
         Opskrifter teOpskrift = new Opskrifter("Te");
-        Ingrediens teBrev = new Ingrediens("Tebrev");
-        Ingrediens vand = new Ingrediens("Vand");
+        Ingrediens teBrev = new Ingrediens("Tebrev",0);
+        Ingrediens vand = new Ingrediens("Vand",0);
         Ingrediens citron = new Ingrediens("Citron",28);
-        Ingrediens sukker = new Ingrediens("Sukker",200);
+        Ingrediens sukker = new Ingrediens("Sukker",390);
 
         blankLine();
 
@@ -59,6 +59,9 @@ public class SimpelTest {
         blankLine();
         IngrediensNedarvingsDetaljer pølseDetaljer = new IngrediensNedarvingsDetaljer("Pølse",2,12,7);
         pølseDetaljer.godModForkoelse();
+
+        blankLine();
+
 
     }
     public static void blankLine() {

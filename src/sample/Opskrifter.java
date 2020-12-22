@@ -113,4 +113,11 @@ public class Opskrifter {
         blankLine();
         visFremgangsmaadeTe();
     }
+
+    Kalorierberegner kalorierberegner = new Kalorierberegner() {
+        @Override
+        public int kalorieriAlt() {
+            return 0;
+        }
+    };
 }

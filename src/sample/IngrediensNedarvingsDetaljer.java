@@ -52,4 +52,5 @@ public class IngrediensNedarvingsDetaljer extends Ingrediens{
             System.out.println(getNavn() + " er ikke god mod forkølelse.");
         return false;
     }
+
 }
