@@ -51,6 +51,15 @@ public class SimpelTest {
         blankLine();
         citron.rigPaaKalorier();
         sukker.rigPaaKalorier();
+
+        blankLine();
+        IngrediensNedarvingsDetaljer citronDetaljer = new IngrediensNedarvingsDetaljer("Citron",53,8,26);
+        citronDetaljer.godModForkoelse();
+
+        blankLine();
+        IngrediensNedarvingsDetaljer pølseDetaljer = new IngrediensNedarvingsDetaljer("Pølse",2,12,7);
+        pølseDetaljer.godModForkoelse();
+
     }
     public static void blankLine() {
         System.out.println("");
