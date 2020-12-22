@@ -61,8 +61,17 @@ public class Opskrifter {
         System.out.println("Opskrift er oprettet: " + navn);
     }
 
-   public void addIngredients(Ingrediens ingrediens) {
+   public void addIngrediens(Ingrediens ingrediens) {
+
    }
+
    public void addIngrediens(String navn, int kalorier) {
+
    }
+
+/*   public void visIngredienser() {
+       for (String ingrediens : ) {
+           System.out.println("Du skal til ");
+       }
+   }*/
 }
