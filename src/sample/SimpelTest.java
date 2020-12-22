@@ -7,9 +7,14 @@ public class SimpelTest {
     public static void main(String[] args) {
         System.out.println("Velkommen til min opskrift-applikations-dummy");
         blankLine();
-        glasurOpskrift();
+        Opskrifter glasurOpskrift = new Opskrifter("Glasur");
+        Ingrediens flormelis = new Ingrediens("Flormelis");
+        Ingrediens Vand = new Ingrediens("Vand");
         blankLine();
-        teOpskrift();
+        Opskrifter teOpskrift = new Opskrifter("Te");
+        Ingrediens teBrev = new Ingrediens("Tebrev");
+        Ingrediens vand = new Ingrediens("Vand");
+        Ingrediens citron = new Ingrediens("Citron");
 
         blankLine();
 
@@ -33,6 +38,10 @@ public class SimpelTest {
         for (int i = 0; i < ingredienserTeOpskrift.size(); i++) {
             System.out.println(" - " + ingredienserTeOpskrift.get(i));
         }
+        blankLine();
+        glasurOpskrift.visFremgangsmaadeGlasur();
+        blankLine();
+        teOpskrift.visFremgangsmaadeTe();
 
     }
     public static void blankLine() {
@@ -58,17 +67,4 @@ public class SimpelTest {
         SimpelTest.teOpskrift = teOpskrift;
     }
 */
-    public static void glasurOpskrift() {
-        Opskrifter glasurOpskrift = new Opskrifter("Glasur");
-        Ingrediens flormelis = new Ingrediens("Flormelis");
-        Ingrediens Vand = new Ingrediens("Vand");
-
-    }
-    public static void teOpskrift() {
-        Opskrifter teOpskrift = new Opskrifter("Te");
-        Ingrediens teBrev = new Ingrediens("Tebrev");
-        Ingrediens vand = new Ingrediens("Vand");
-        Ingrediens citron = new Ingrediens("Citron");
-
-    }
 }

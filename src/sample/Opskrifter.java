@@ -74,4 +74,14 @@ public class Opskrifter {
            System.out.println("Du skal til ");
        }
    }*/
+
+    //Vidste ikke hvordan jeg kunne adskille de to fremgangsmåder i én metode.
+    public void visFremgangsmaadeGlasur(){
+        System.out.println("Opskriften for " + navn + ":");
+        System.out.println("- Du blander flormelis og sukker, og smører det på kagen.");
+    }
+    public void visFremgangsmaadeTe() {
+        System.out.println("Opskriften for " + navn + ":");
+        System.out.println("- Put teen i kogende vand, vent 2 minutter og server.");
+    }
 }
